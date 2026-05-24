@@ -74,18 +74,6 @@ int size(List *l){
 }
 
 int main(){
-    List *minha_lista = create_list();
     
-    push_back(minha_lista, 10);
-    push_back(minha_lista, 20);
-    push_front(minha_lista, 5);
-    push_back(minha_lista, 30);
-    
-    printf("Conteudo da lista:\n");
-    print_list(minha_lista);
-    
-    printf("Tamanho da lista: %d\n", size(minha_lista));
-    free(minha_lista);
-
     return 0;
 }
