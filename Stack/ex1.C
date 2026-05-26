@@ -39,7 +39,7 @@ void push(Stack *s, int value){
 int pop(Stack *s){
     if(is_empty(s)){
         printf("Error: Stack Underflow\n");
-        return;
+        return -1;
     }
     int value = s->itens[s->top];
     s->top--;
@@ -59,7 +59,7 @@ int main(){
     }
     printf("Inverted stack:");
     
-    while(is_empty(s)){
+    while(!is_empty(s)){
         int popped = pop(s);
         printf("%d ", popped);
     }
