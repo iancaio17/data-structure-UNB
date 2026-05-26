@@ -39,6 +39,7 @@ void push(Stack *s, int value){
 int pop(Stack *s){
     if(is_empty(s)){
         printf("Error: Stack Underflow\n");
+        return;
     }
     int value = s->itens[s->top];
     s->top--;
